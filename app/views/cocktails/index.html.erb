@@ -1,8 +1,23 @@
 <div class="container">
+  <nav class="navbar navbar-light justify-content-between mb-4">
+    <a class="navbar-brand"><i class="fas fa-cocktail h2 text-success"></i></a>
+    <form class="form-inline">
+    <%= link_to 'Add New Cocktail', new_cocktail_path, class: "btn btn-outline-success" %>
+    </form>
+  </nav>
+
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <h1 class="m-auto"><%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h1>
+      <div class="col-4 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://www.destinationcocktails.fr/wp-content/uploads/recipes/079_tropicalkamasutra.jpg" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title"><%= cocktail.name %></h5>
+              <p><%= link_to "More info", cocktail_path(cocktail), class: "btn btn-primary" %></p>
+          </div>
+        </div>
+      </div>
     <% end %>
   </div>
-  <%= link_to 'Add new !', new_cocktail_path, class: "btn btn-warning" %>
+
 </div>

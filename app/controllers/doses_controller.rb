@@ -1,5 +1,4 @@
 class DosesController < ApplicationController
-
   def index
     @dose = Dose.all
   end
