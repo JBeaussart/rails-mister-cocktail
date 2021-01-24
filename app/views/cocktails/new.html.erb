@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="row">
-    <div class="col-6 m-auto">
+  <div class="row mt-5 rounded">
+    <div class="col-6 m-auto bg-white p-4">
     <h1 class="mb-5">Add a cocktail</h1>
       <%= simple_form_for [ @cocktail] do |f| %>
         <%= f.input :name %>
-        <%= f.submit "Submit", class: "btn btn-primary" %>
-        <%= link_to "Cancel", cocktails_path, class: "btn btn-danger" %>
+        <%= f.submit "Submit", class: "btn-blue" %>
+        <%= link_to "Cancel", cocktails_path, class: "btn-orange" %>
       <% end %> 
     </div>
   </div>

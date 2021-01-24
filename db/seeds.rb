@@ -1,15 +1,15 @@
-puts "destroy ingredients && Cocktails"
+puts 'destroy ingredients && Cocktails'
 Ingredient.destroy_all
 Cocktail.destroy_all
 
-puts "Creating ingredient && Cocktail..."
-lemon = { name: "lemon" }
-ice = { name: "ice" }
-mint = { name: "mint leaves" }
+puts 'Creating ingredient && Cocktail...'
+lemon = { name: 'Lemon' }
+ice = { name: 'Ice' }
+mint = { name: 'Lint leaves' }
 
-pina_colada = { name: "pina colada" }
-sex_on_the_beach = { name: "sex on the beach" }
-malibu = { name: "malibu sunrise" }
+pina_colada = { name: 'Pina colada' }
+sex_on_the_beach = { name: 'Sex on the beach' }
+malibu = { name: 'Malibu sunrise' }
 
 [lemon, ice, mint].each do |attributes|
   ingredient = Ingredient.create!(attributes)
@@ -21,4 +21,4 @@ end
   puts "Created #{cocktail.name}"
 end
 
-puts "Finished!"
+puts 'Finished!'

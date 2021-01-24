@@ -12,6 +12,14 @@
   </head>
 
   <body>
+    <div class="container">
+      <nav class="navbar justify-content-between mb-4">
+      <a class="navbar-brand"><i class="fas fa-cocktail h2"></i></a>
+      <form class="form-inline">
+      <%= link_to 'Add New Cocktail', new_cocktail_path, class: "btn-orange" %>
+      </form>
+    </div>
+  </nav>
     <%= yield %>
   </body>
 </html>
