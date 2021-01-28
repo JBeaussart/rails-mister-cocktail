@@ -27,3 +27,16 @@
     text-decoration: none;
   }
 }
+
+.btn-red {
+  background-color: #bb3030;
+  color: white;
+  border-radius: 24px;
+  padding: 8px 16px;
+  opacity: 0.8;
+  &:hover {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
